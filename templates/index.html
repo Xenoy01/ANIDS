@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Intrusion Detection</title>
+</head>
+<body>
+    <h2>Enter Input Data</h2>
+    <form action="/predict" method="post">
+        <!-- Add input fields for your features here -->
+        src_bytes: <input type="text" name="src_bytes"><br>
+        dst_bytes: <input type="text" name="dst_bytes"><br>
+        <!-- Add more features as needed -->
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
+
